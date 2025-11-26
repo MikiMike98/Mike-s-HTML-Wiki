@@ -9,13 +9,10 @@
     <section>
         <h1 align="center"> Mike's HTML Wiki </h1>
         <h2 align="left"> Concept </h2>
-        <p> 
-            This is a Wiki about HTML, built entirely and exclusively in HTML. 
-            The purpose of this project is so that, while I'm learning HTML, I'm actively interacting and building with it.
-            This project was started on 26-11-2025, when I was 1 week and a half into learning HTML.
-
-            <button> Resources and Further Reading </button>
-        </p>
+        <p> This is a Wiki about HTML, built entirely and exclusively in HTML. The purpose of this project is so that, while I'm learning HTML, I'm actively interacting and building with it. </p>           
+        <p> This project was started on 26-11-2025, when I was 1 week and a half into learning HTML. </p> 
+        <button> Resources and Further Reading </button>
+        
         <h2 align="left"> What is HTML </h2>
         <p> 
             HTML stands for Hypertext Markup Language. As a markup language, it serves the purpose of establishing the structure and content of a page.
@@ -34,12 +31,13 @@
             It sets the document type, important metadata like title, which appears on the browser window, language of the document, important information for SEO purposes, it sets the character set, usually UTF-8, to encompass characters outside of the english lanuage, think latin languages accents or asian languages symbols.
         </p>
         <h3 align="left"> An example </h3>
-        <p> This is what a boilerplate looks like. Only the body section will appear on the page, everything else is set for SEO and browser compatibility </p>
         <img src="./images/HTML-boilerplate.png">
+        <p> This is what a boilerplate looks like. Only the body section will appear on the page, everything else is set for SEO and browser compatibility </p>        
     </section>
 
     <section>
         <h1 align="center"> HTML Elements </h1>
+        <h2 align="left"> What they are and how they work </h2>
         <p> HTML elements are what determines which type of content is added to the page. This could be a heading, a paragraph, an image, a video, an iframe, etc.</p>
         <p> Elements differ in syntax. H1 through H6, P, Section, Div, are elements that need to be closed, while img or video are self closing. The tag to close an element is equal to the opening tag but with a forward slash.</p>
         <ul>
@@ -49,6 +47,10 @@
         <ul>
             <li> &lt;img src="google.com/catimage.png"&gt;</li>
         </ul>
+        <h2 align="left"> The difference between Non Self-Closing and Self-Closing </h2>
+        <p> Non Self-closing elements, like h1, p, or ul, have to be closed to determine when their content ends. In a h1 element, for example, you write text inside it and the close tag serves to determine when the h1 text ends.</p>
+        <p> Self-Closing elements, also known as Void Elements, like &lt;img&gt; or &lt;video&gt; do not have to be closed because they do not contain any content inside, they serve to link to content that is somewhere else, like an image that's on google, or a video that's on youtube. There's no need to close the void element because there's no content on the element that needs to have a defined end, only a link to external content.</p>
+        <p> The difference between these two types of elements also serve as a reason as to why you can fully customize self-closing elements with CSS, while void elements have limited customization, usually reserved to size or placement, but never any attribute that modifies the content that's being linked. (Example: you can set a video to center right or left, but you can't apply a colour overlay to the video with HTML</p>
     </section>
 </body>
 </html>
