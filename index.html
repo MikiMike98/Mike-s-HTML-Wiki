@@ -9,20 +9,17 @@
 <body>    
     <header>
         <section align="center">
-            <hr>
             <h1> Mike's HTML Wiki </h1>
             <h2> Concept </h2>
             <p> This is a Wiki about HTML, built entirely and exclusively in HTML. The purpose of this project is so that, while I'm learning HTML, I'm actively interacting and building with it. </p>           
             <p> This project was started on 26-11-2025, when I was 1 week and a half into learning HTML. </p> 
             <nav>    
             <a href="./resources.html" target="_self"> <button>Further Reading & Resources</button></a>
-            </nav>                           
+            </nav>                                       
         </section>
+    
     </header>
-
-    <br>
     <hr>
-
     <main>
         <section align="center">
             <h1> What is HTML </h1>
@@ -37,44 +34,36 @@
             You could also explain it using a box as an example. HTML would set the structure of that box and the internal divisions of that box. <br> Inside that box you would put the content of the box, still with HTML. With CSS you would stylize the shape of the compartments, the colors, the alignment, etc. <br> With JavaScript you would set how the box opens, how objects move or are interacted with inside the box, etc.
             </p> 
         </section>
-        <br>
         <hr>                 
         <section align="center"> 
             <h1> How an HTML file works </h1>
             <h2> The Boilerplate </h2>
             <p> 
             The boilerplate is the uppermost section of the html document. 
-            This section does not appear on the page itself, since it's function is to be an entry point for how a browser opens the page. 
-            It sets the document type, important metadata like title, which appears on the browser window, language of the document, important information for SEO purposes, it sets the character set, usually UTF-8, to encompass characters outside of the english lanuage, think latin languages accents or asian languages symbols.
+            This section does not appear on the page itself, since it's function is to be an entry point <br> for how a browser opens the page. 
+            It sets the document type, important metadata like title, which appears on the browser window, language of the document, <br> important information for SEO purposes, it sets the character set, usually UTF-8, to encompass characters outside of the english lanuage, think latin <br> languages accents or asian languages symbols.
             </p>
             <h3> An example </h3>
             <img src="./images/HTML-boilerplate.png">
             <p> This is what a boilerplate looks like. Only the body section will appear on the page, everything else is set for SEO and browser compatibility </p>        
         </section>
-        <br>
         <hr>
         <section align="center">
             <h1> Semantic vs Non-semantic HTML</h1>
         </section>
-        <br>
         <hr>
         <section align="center">
             <h1> HTML Elements </h1>
             <p> HTML elements are what determines which type of content is added to the page. This could be a heading, a paragraph, an image, a video, an iframe, etc.</p>
-            <br>
             <h2> Container Tags and Empty Tags</h2>
             <p> Elements differ in syntax. H1 through H6, P, Section, Div, et cetera, are elements that need container tags, while img or video use empty tags.</p>
-            <br>
             <h3> Container Tags</h3>                 
             <p>Elements that use Container Tags have their content contained between two tags. Here we can see the three parts of an element that requires container tags:</p>
             <img src="./images/ContainerTagExample.png" alt="Image showing Container Tag syntax" width="500px">
             <p>The closing tag is equal to the opening tag, except it includes a forward slash before the element name.</p>
-            <br>
             <h3> Empty Tags </h3>
             <p> Elements that use empty tags do not need a close tag, they are <strong>self</strong>-closing. </p>
-            <ul>
-                <li> Example: &lt;img src="google.com/catimage.png"&gt;</li>
-            </ul>
+            <p> <b>Example:</b> &lt;img src="google.com/catimage.png"&gt;</p>
             <p>Here we can see that the img element and the src="google.com/catimage.png are all contained within a singular Opening Tag. This is because img is a void element, a type of element that does not actually hold any content inside of itself, it simply points to content that is elsewhere, in this case a link of an image.</p>
             <p> Elements that link to content that is elsewhere on the web or a folder are not the only types of void elements. Other ones, like the &lt;br&gt; creates the dividing line that you see below and above this section. In this sense, most void elements either serve the purpose of linking to external content, or serve the purpose of creating structure markers, like these lines. This type of element has pretty much been made obsolete because of CSS (Cascading Style Sheets), while img, video, iframe, etc remain essential. </p>
             <hr>
